@@ -1,6 +1,5 @@
 import * as React from "react"
 import Head from "next/head"
-import styles from "../styles/Home.module.css"
 
 const pois = [
   {
@@ -58,13 +57,13 @@ export default function ActivityMap() {
   }
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <ul className={styles.pois}>
+      <main>
+        <ul>
           {pois.map((poi) => {
             return (
               <li key={poi.name}>
@@ -77,22 +76,11 @@ export default function ActivityMap() {
             )
           })}
         </ul>
-        <div className={styles.map}>
+        <div>
           <Map coords={listOfPois[selectedItem]} />
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    </>
   )
 }
 function Map({ coords }) {

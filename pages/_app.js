@@ -3,10 +3,16 @@ import "../styles/globals.css"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <>
       <Header />
-      <Component {...pageProps} />
-    </div>
+      <main>
+        <Component {...pageProps} />
+      </main>
+      <footer>
+        <strong>© Eksperter i Team</strong>&nbsp;—&nbsp;
+        {new Date().getFullYear()}
+      </footer>
+    </>
   )
 }
 

@@ -1,33 +1,26 @@
-import styles from "../styles/Home.module.css"
 import Link from "next/link"
+
+const nav = [
+  { title: "Hjem", href: "/" },
+  { title: "Aktivitetskart", href: "#aktivitetskart" },
+  { title: "Info om poeng", href: "/info-om-poeng" },
+  { title: "Info om psykisk helse", href: "/info-om-psykisk-helse" },
+]
 
 export default function Header() {
   return (
-    <nav className={styles.nav}>
+    <nav>
+      <ul>
+        {nav.map((item) => (
+          <li key={item.href}>
+            <Link href={item.href}>
+              <a>{item.title}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
       <img src="/logo.png" alt="to mennesker holder hender" />
       <h1>Aktiviteter for barn & unge</h1>
-      <ul>
-        <li>
-          <Link href="/">
-            <a>Hjem</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/aktivitetskart">
-            <a>Aktivitetskart</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/teststasjoner">
-            <a>Teststasjoner</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/psykologi">
-            <a>Psykologi</a>
-          </Link>
-        </li>
-      </ul>
     </nav>
   )
 }
