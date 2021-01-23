@@ -14,13 +14,13 @@ export default function Home() {
         <Hero />
         <section id="aktivitetskart">
           <h2>Aktivitetskart</h2>
-          {/* <iframe
+          <iframe
             id="map-iframe"
             frameBorder="0"
             src="https://ntnu-gis.maps.arcgis.com/apps/webappviewer/index.html?id=e202ca614a784d1284eeff840a8344fa"
             width="100%"
             height="100%"
-          /> */}
+          />
         </section>
         <section>
           <h2>Psykisk helse</h2>
