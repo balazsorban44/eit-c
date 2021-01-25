@@ -1,10 +1,11 @@
 import Link from "next/link"
 
 const nav = [
+  { title: "Hjem", href: "/" },
   { title: "Utekart", href: "/#aktivitetskart" },
   { title: "Utepoeng", href: "/info-om-poeng" },
   { title: "Helse", href: "/info-om-psykisk-helse" },
-  { title: "Kontakt", href: "/kontakt" },
+  { title: "Kontakt", href: "/info-kontakt" },
 ]
 
 export default function Header() {

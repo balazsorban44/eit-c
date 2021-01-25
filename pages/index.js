@@ -12,14 +12,38 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <section>
+        <section style={{ minHeight: 0 }}>
+        <div style={{ display: "flex" }}>
+        <div
+            style={{
+              flex: 1,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          > 
+          
+          <h2 style={{ textAlign: "center" }}>Informasjon om poengsystemet</h2>
+            <p style={{ maxWidth: "60%" }}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book.
+            </p>
+            <p style={{ maxWidth: "60%" }}>
+              It has survived not only five centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s
+              with the release of Letraset sheets containing Lorem Ipsum passages,
+              and more recently with desktop publishing software like Aldus
+              PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+          
           <div
             style={{
               minWidth: 320,
               backgroundColor: "white",
-              boxShadow: "0 0 20px black",
-              marginTop: -64,
-              alignSelf: "flex-start",
             }}
           >
             <h3 style={{ textAlign: "center" }}>Topp 10</h3>
@@ -28,10 +52,17 @@ export default function Home() {
                 { name: "Jakob", point: 175 },
                 { name: "Ann Elise", point: 170 },
                 { name: "Inger", point: 157 },
+                { name: "Hans", point: 147 },
+                { name: "Solveig", point: 139 },
+                { name: "Christian", point: 133 },
+                { name: "Mette", point: 130 },
+                { name: "Johann", point: 124 },
+                { name: "Marit", point: 122 },
+                { name: "Benjamin", point: 113 },
               ].map((person, i) => (
                 <li
                   style={{
-                    padding: 16,
+                    padding: 0,                    marginBottom: 30,
                     display: "flex",
                     justifyContent: "space-between",
                   }}
@@ -41,10 +72,23 @@ export default function Home() {
                   <span>{person.name}</span>
                   <span>{person.point}</span>
                 </li>
-              ))}
+              ))
+              }
             </ul>
+            <p style={{
+                    padding: 10,
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}>
+            <span>43.</span>
+            <span><strong>Per (deg)</strong></span>
+            <span>55</span>
+            </p>
           </div>
+        </div>
+
         </section>
+        
         <section id="aktivitetskart">
           <h2>Aktivitetskart</h2>
           <iframe
@@ -62,8 +106,8 @@ export default function Home() {
             gjøre med tanke på dagens situasjon med korona-pandemi og
             restriksjoner fra myndighetene.
           </p>
-          <Link href="/psykisk-helse">
-            <a>Info, helse vetje</a>
+          <Link href="/info-om-psykisk-helse">
+            <a className="link"><strong>Mer info</strong></a>
           </Link>
         </section>
       </main>
