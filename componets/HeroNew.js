@@ -5,7 +5,8 @@ export default function Hero() {
         minHeight: "90vh",
         position: "relative",
         display: "flex",
-        justifyContent: "center",
+        flexDirection: "column",
+        justifyContent: "flex-end",
         alignItems: "center",
       }}
     >
@@ -36,21 +37,30 @@ export default function Hero() {
             top: 0,
             left: 0,
             background:
-              "linear-gradient(white, transparent 30%, transparent 85%, white)",
+              "linear-gradient(white, transparent 30%, transparent 95%, white)",
           }}
         />
       </div>
 
       <img
         style={{
-          width: "5%",
-          height: "5%",
+          width: 96,
+          height: 96,
         }}
         src="/logo.png"
         alt="logo som viser en person går mot et tre"
       />
 
-      <h1> Aktiviteter i Trondheim</h1>
+      <h1
+        style={{
+          marginTop: 260,
+          marginBottom: 250,
+          fontSize: 72,
+          fontWeight: "lighter",
+        }}
+      >
+        Aktiviteter i Trondheim
+      </h1>
     </div>
   )
 }

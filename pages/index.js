@@ -31,22 +31,21 @@ export default function Home() {
               maxWidth: "40%",
             }}
           >
-            <h3 style={{ marginTop: "10vh", marginBottom: "5vh" }}>
+            <h3
+              style={{ marginTop: "10vh", marginBottom: "5vh", fontSize: 32 }}
+            >
               Aktivpoeng
             </h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              ever since the 1500s.
             </p>
             <p>
               It has survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged. It was
               popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              containing Lorem Ipsum passages.
             </p>
           </div>
 
@@ -61,6 +60,7 @@ export default function Home() {
                 marginTop: "10vh",
                 marginBottom: "5vh",
                 textAlign: "center",
+                fontSize: 32,
               }}
             >
               Topp 10
