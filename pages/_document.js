@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="/FrederickatheGreat-Regular" rel="stylesheet" />
+          <link href="/FrederickatheGreat-Regular.ttf" rel="stylesheet" />
         </Head>
         <body>
           <Main />
