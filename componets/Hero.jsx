@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div id="hero">
       <div id="hero-img">
-        <img src="../public/heropipe.jpg" alt="En gruppe barn ser smilende inn i kamera" />
+        <img src="../public/hero.jpg" alt="En gruppe barn ser smilende inn i kamera" />
       </div>
       <div className="hero-box" id="point">
         <span id="point-title">Poeng:</span>
