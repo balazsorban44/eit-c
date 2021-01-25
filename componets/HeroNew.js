@@ -32,24 +32,25 @@ export default function Hero() {
           style={{
             position: "absolute",
             width: "100%",
-            height: "10%",
+            height: "100%",
             top: 0,
             left: 0,
-            background: "linear-gradient(white 40%, transparent)",
+            background:
+              "linear-gradient(white, transparent 30%, transparent 85%, white)",
           }}
         />
       </div>
 
+      <img
+        style={{
+          width: "5%",
+          height: "5%",
+        }}
+        src="/logo.png"
+        alt="logo som viser en person går mot et tre"
+      />
 
-      <img style={{
-            width: "5%",
-            height: "5%",
-          }}
-          src="/logo.png" 
-          alt="logo som viser en person går mot et tre" /> 
-     
-      <h1> Aktivitet i Trondheim</h1>
-
+      <h1> Aktiviteter i Trondheim</h1>
     </div>
   )
 }
