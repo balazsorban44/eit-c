@@ -1,10 +1,10 @@
 import Link from "next/link"
 
 const nav = [
-  { title: "Hjem", href: "/" },
-  { title: "Aktivitetskart", href: "#aktivitetskart" },
-  { title: "Info om poeng", href: "/info-om-poeng" },
-  { title: "Info om psykisk helse", href: "/info-om-psykisk-helse" },
+  { title: "Utekart", href: "/#aktivitetskart" },
+  { title: "Utepoeng", href: "/info-om-poeng" },
+  { title: "Helse", href: "/info-om-psykisk-helse" },
+  { title: "Kontakt", href: "/kontakt" },
 ]
 
 export default function Header() {
@@ -19,8 +19,6 @@ export default function Header() {
           </li>
         ))}
       </ul>
-      <img src="/logo.png" alt="to mennesker holder hender" />
-      <h1>Aktiviteter for barn & unge</h1>
     </nav>
   )
 }

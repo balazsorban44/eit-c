@@ -1,7 +1,7 @@
 import * as React from "react"
 import Head from "next/head"
 import Link from "next/link"
-import Hero from "../componets/Hero"
+import Hero from "../componets/HeroNew"
 
 export default function Home() {
   return (
@@ -12,6 +12,39 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
+        <section>
+          <div
+            style={{
+              minWidth: 320,
+              backgroundColor: "white",
+              boxShadow: "0 0 20px black",
+              marginTop: -64,
+              alignSelf: "flex-start",
+            }}
+          >
+            <h3 style={{ textAlign: "center" }}>Topp 10</h3>
+            <ul>
+              {[
+                { name: "Jakob", point: 175 },
+                { name: "Ann Elise", point: 170 },
+                { name: "Inger", point: 157 },
+              ].map((person, i) => (
+                <li
+                  style={{
+                    padding: 16,
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                  key={person.name + person.point}
+                >
+                  <span>{i + 1}.</span>
+                  <span>{person.name}</span>
+                  <span>{person.point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
         <section id="aktivitetskart">
           <h2>Aktivitetskart</h2>
           <iframe
