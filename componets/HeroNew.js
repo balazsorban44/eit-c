@@ -26,7 +26,7 @@ export default function Hero() {
             height: "100%",
           }}
           src="/hero.jpg"
-          alt="En gruppe barn ser smilende inn i kamera"
+          alt="Bildet viser gamle bybroa over Nidelva i Trondheim"
         />
         <div
           style={{
@@ -40,7 +40,16 @@ export default function Hero() {
         />
       </div>
 
-      <h1>Aktivitet i Trondheim</h1>
+
+      <img style={{
+            width: "5%",
+            height: "5%",
+          }}
+          src="/logo.png" 
+          alt="logo som viser en person går mot et tre" /> 
+     
+      <h1> Aktivitet i Trondheim</h1>
+
     </div>
   )
 }
