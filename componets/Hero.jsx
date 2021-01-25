@@ -14,7 +14,7 @@ export default function Hero() {
         <img src="/utpaatur.gif" />
       </div>
       <div className="hero-box" id="high-score">
-        high score list
+        HIGH SCORE
       </div>
     </div>
   )
