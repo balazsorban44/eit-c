@@ -2,10 +2,10 @@ import Link from "next/link"
 
 const nav = [
   { title: "Hjem", href: "/" },
-  { title: "Utekart", href: "/#aktivitetskart" },
-  { title: "Utepoeng", href: "/info-om-poeng" },
-  { title: "Helse", href: "/info-om-psykisk-helse" },
-  { title: "Kontakt", href: "/info-kontakt" },
+  { title: "Utekart", href: "#aktivitetskart" },
+  { title: "Utepoeng", href: "#poenginfo" },
+  { title: "Helse", href: "#psykiskhelse" },
+  { title: "Kontakt", href: "#kontaktinfo" },
 ]
 
 export default function Header() {
@@ -14,9 +14,7 @@ export default function Header() {
       <ul>
         {nav.map((item) => (
           <li key={item.href}>
-            <Link href={item.href}>
-              <a>{item.title}</a>
-            </Link>
+            <a href={item.href}> {item.title} </a>
           </li>
         ))}
       </ul>
