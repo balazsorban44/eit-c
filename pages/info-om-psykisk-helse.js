@@ -1,7 +1,6 @@
 export default function MentalHealth() {
   return (
     <section style={{ minHeight: 0 }}>
-      <h2 style={{ textAlign: "center" }}>Informasjon om psykisk helse</h2>
       <div style={{ display: "flex" }}>
         <div
           style={{
@@ -12,27 +11,15 @@ export default function MentalHealth() {
             flexDirection: "column",
           }}
         >
+          <h2 style={{color:"#228B22",textAlign: "center" }}>Hvorfor uteaktivitet?</h2>
           <p style={{ maxWidth: "60%" }}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+          Å være i bevegelse jevnlig er bra for kroppen, det vet vi. Det vi kanskje ikke tenker ofte nok på er at aktivitet også er godt for den psykiske helsa. Vi føler oss både sterkere og lettere til sinns, etter en gå-, jogge- eller sykkeltur. 
           </p>
           <p style={{ maxWidth: "60%" }}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+          Når du er aktiv, produserer kroppen din lykkehormoner som heter endorfiner. Det spiller ikke så stor rolle hva slags aktivitet du holder på med, så lenge du blir litt varm og gjerne andpusten. Gjør en aktivitet du liker, enten det er dansing, svømming eller skigåing. Mulighetene er mange.
+          </p>
+          <p style={{ maxWidth: "60%" }}>
+          Helsedirektoratet anbefaler alle barn og unge å være aktive minst 60 minutter hver dag. De som er aktive sammen med andre, opplever at det sosiale bidrar til økt trivsel og godt humør. Utendørsaktiviteter gir frisk luft og sollys, og det kan redusere stress, øke energinivået og gi bedre søvnkvalitet.
           </p>
         </div>
         <div
@@ -43,7 +30,8 @@ export default function MentalHealth() {
             justifyContent: "center",
           }}
         >
-          <img src="https://www.fillmurray.com/300/300" />
+          <p style={{color:"#228B22", maxWidth: "40%" }}><strong>"Helsedirektoratet anbefaler alle barn og unge
+            å være aktive i minst 60 minutter hver dag"</strong></p>
         </div>
       </div>
     </section>
