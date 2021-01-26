@@ -120,17 +120,16 @@ export default function Home() {
       id="aktivitetskart"
       style={{ 
         margin: "5vh 15vw" ,
-        marginTop: "200px",
-        boxShadow:"5px 10px 20px 0 rgba(0, 0, 0, 0.5), 4px 6px 20px 0 rgba(0, 0, 0, 0.5)",
+        marginTop: 250
       }}
     >
       <iframe
-      
         id="map-iframe"
         frameBorder="0"
         src="https://ntnu-gis.maps.arcgis.com/apps/webappviewer/index.html?id=e202ca614a784d1284eeff840a8344fa"
-        width="90%"
-        height="90%"
+        width="120%"
+        height="100%"
+        style={{minHeight: "85vh" , boxShadow:"5px 10px 20px 0 rgba(0, 0, 0, 0.5), 4px 6px 20px 0 rgba(0, 0, 0, 0.5)"}}
       />
       </section>
 
