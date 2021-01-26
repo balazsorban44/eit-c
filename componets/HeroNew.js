@@ -37,7 +37,7 @@ export default function Hero() {
             top: 0,
             left: 0,
             background:
-              "linear-gradient(white, transparent 30%, transparent 95%, white)",
+              "linear-gradient(white 10%, transparent 30%, transparent 95%, white)",
           }}
         />
       </div>
@@ -46,6 +46,9 @@ export default function Hero() {
         style={{
           width: 96,
           height: 96,
+          WebkitFilter: "drop-shadow(2px 2px 4px #808080)",
+          filter: "drop-shadow(2px 2px 4px #808080)",
+
         }}
         src="/logo.png"
         alt="logo som viser en person går mot et tre"
@@ -53,12 +56,12 @@ export default function Hero() {
 
       <h1
         style={{
-          marginTop: 260,
-          marginBottom: 250,
+          marginTop: 50,
+          marginBottom: 500,
           fontSize: 72,
+          textShadow: "2px 2px 4px #808080",
           fontWeight: "lighter",
           fontFamily: 'DM Serif Display',
-
         }}
       >
         Aktiv i Trondheim

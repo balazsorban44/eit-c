@@ -15,6 +15,7 @@ export default function Home() {
         <section
           id="poenginfo"
           style={{
+            marginTop: "200px",
             minHeight: 0,
             flexDirection: "row",
             alignItems: "flex-start",
@@ -33,10 +34,9 @@ export default function Home() {
             
             <h3
               style={{ marginTop: "10vh", 
-              font: 'DM Serif Display',
-              color: "#558405",
+              color: "#5e5e2b",
               marginBottom: "5vh", 
-              fontSize: 32 
+              fontSize: 34 
             }}
             >
               Aktivpoeng
@@ -54,6 +54,17 @@ export default function Home() {
             </p>
           </div>
 
+          <img
+          style={{
+            objectFit: "cover",
+            width: "18%",
+            height: "10%",
+            marginTop: "20vh", 
+          }}
+          src="/togapatur.png"
+          alt="Bildet viser to personer som går tur"
+        />
+
           <div
             style={{
               minWidth: 320,
@@ -66,7 +77,7 @@ export default function Home() {
                 marginBottom: "5vh",
                 textAlign: "center",
                 fontSize: 34,
-                color: "#558405",
+                color: "#5e5e2b",
               }}
             >
               Topp 10
@@ -89,7 +100,7 @@ export default function Home() {
                   style={{
                     fontFamily: "Proxima Nova light",
                     backgroundColor: "#edf2e5",
-                    padding: 3,
+                    padding: "3px 16px",
                     marginBottom: 3,
                     marginTop: person.active ? 32 : undefined,
                     display: "flex",
@@ -97,13 +108,9 @@ export default function Home() {
                   }}
                   key={person.name + person.point}
                 >
-                  <span>{person.place ?? i + 1}.</span>
-                  {person.active ? (
-                    <strong>{person.name}</strong>
-                  ) : (
-                    <span>{person.name}</span>
-                  )}
-                  <span>{person.point}</span>
+                  <span style={{color: "#5e5e2b"}}>{person.place ?? i + 1}.</span>                  
+                  <span>{person.name}</span>
+                  <strong style={{color: "#5e5e2b"}}>{person.point}</strong>
                 </li>
               ))}
             </ul>
@@ -112,9 +119,14 @@ export default function Home() {
 
         <section
       id="aktivitetskart"
-      style={{ margin: "5vh 15vw" }}
+      style={{ 
+        margin: "5vh 15vw" ,
+        marginTop: "200px",
+        boxShadow:"5px 10px 20px 0 rgba(0, 0, 0, 0.5), 4px 6px 20px 0 rgba(0, 0, 0, 0.5)",
+      }}
     >
       <iframe
+      
         id="map-iframe"
         frameBorder="0"
         src="https://ntnu-gis.maps.arcgis.com/apps/webappviewer/index.html?id=e202ca614a784d1284eeff840a8344fa"
@@ -123,9 +135,29 @@ export default function Home() {
       />
       </section>
 
+      <section
+      id="imagePastMap"
+      style={{ 
+        marginTop: "250px",
+
+        }}>
+
+      <img
+          style={{
+            objectFit: "cover",
+            width: "100%",
+            height: "100%",
+            boxShadow:"5px 10px 20px 0 rgba(0, 0, 0, 0.5), 4px 6px 20px 0 rgba(0, 0, 0, 0.5)",
+          }}
+          src="/pastmap.jpg"
+          alt="Bildet viser en person som går tur i skogen"
+        />
+      </section>
+
+
         <section
           id="psykiskhelse"
-          style={{ flexDirection: "row", minHeight: "80vh" }}
+          style={{ flexDirection: "row", minHeight: "80vh", marginTop: "100px", }}
         >
           <div
             style={{
@@ -138,7 +170,7 @@ export default function Home() {
           >
             <h2
               style={{
-                color: "#558405",
+                color: "#5e5e2b",
                 textAlign: "center",
                 fontSize: 32,
               }}
@@ -174,7 +206,7 @@ export default function Home() {
               justifyContent: "center",
             }}
             >
-            <q style={{ color: "#558405", maxWidth: "40%", fontFamily: "Proxima Nova light"}}>
+            <q style={{ color: "#5e5e2b", maxWidth: "40%", fontFamily: "Proxima Nova light"}}>
               <strong>
                 Helsedirektoratet anbefaler alle barn og unge å være aktive i
                 minst <emph>60 minutter</emph> hver dag
@@ -184,10 +216,11 @@ export default function Home() {
         </section>
         <br></br>
 
-        <section id="kontaktinfo">
+        <section id="kontaktinfo"
+        style={{ marginTop: "100px"}}>
         <h2
               style={{
-                color: "#558405",
+                color: "#5e5e2b",
                 textAlign: "center",
                 fontSize: 32,
               }}
@@ -200,23 +233,23 @@ export default function Home() {
           <form className="myform">
           
             <div className="formgroup">
-              <label> <strong>Fornavn</strong> </label>
-              <input color="#558405" type="text" name="firstName"></input>
+              <label style={{fontFamily: "PT Sans Narrow"}}> <strong>Fornavn</strong> </label>
+              <input color="#5e5e2b" placeholder="Ola" type="text" name="firstName"></input>
             </div>
 
             <div className="formgroup">
-              <label><strong>Etternavn</strong></label>
-              <input color="#558405" type="text" name="lastName"></input>
+              <label style={{fontFamily: "PT Sans Narrow"}}><strong>Etternavn</strong></label>
+              <input color="#5e5e2b" placeholder="Nordmann" type="text" name="lastName"></input>
             </div>
 
             <div className="formgroup">
-              <label><strong>Email</strong></label>
-              <input color="#558405" type="text" name="email"></input>
+              <label style={{fontFamily: "PT Sans Narrow"}}><strong>Email</strong></label>
+              <input color="#5e5e2b" placeholder="ola@nordmann.no" type="text" name="email"></input>
             </div>
 
             <div className="formgroup">
               <label><strong>Emne</strong></label>
-              <input color="#558405" type="text" name="emne"></input>
+              <input color="#5e5e2b" type="text" name="emne"></input>
             </div>
 
             <div className="formgroup">
@@ -230,10 +263,10 @@ export default function Home() {
             <br></br>
             <div className="formgroup">
               <label><strong>Melding</strong></label>
-              <textarea type="textarea" name="melding"></textarea>
+              <textarea type="textarea" rows="6" placeholder="Din melding..." name="melding"></textarea>
             </div>
 
-            <input className="button" type="submit" value="Send inn" name=""></input>
+            <input className="button" type="submit" value="Send inn" name="" onclick="location.href: '#kontaktinfo'"></input>
           </form>
         </section>
       </main>

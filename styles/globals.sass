@@ -11,14 +11,16 @@ html
   scroll-behavior: smooth
 
 h1
-  font-family: 'DM Serif Display'
   font-size: 45px
   color: white
   text-align: center
 
+h1, h2, h3, h4, h5, h6
+  font-family: 'DM Serif Display'
+  font-weight: lighter
+
 nav
   margin: 0
-  margin-top: 50px
 
 ul
   padding: 0
@@ -63,9 +65,13 @@ nav
   display: flex
   flex-direction: column
   align-items: center
-  position: relative
+  top: 0
+  right: 0
+  width: 100%
+  position: fixed
   z-index: 1
-
+  background-color: white
+  box-shadow: 0 0 10px 5px white
 nav ul
   flex-wrap: wrap
   display: flex
@@ -137,11 +143,12 @@ nav li:hover
 
 .myform label
   display: block
-  fontFamily: "Proxima Nova light"
+  font-family: "PT Sans Narrow"
   
 .myform input[type="text"], .myform textarea
   padding: 10px
   width: 500px
+  font-family: "PT Sans Narrow"
 
 
 .myform input[type="submit"]
@@ -149,7 +156,7 @@ nav li:hover
   color: #ffffff
   padding: 10px 15px
   border: none
+  font-family: "PT Sans Narrow"
 
 .myform input[type="submit"]:hover
   background: #5e5e2b
-  color: #333333
