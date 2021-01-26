@@ -41,12 +41,12 @@ export default function Home() {
             >
               Aktivpoeng
             </h3>
-            <p style={{fontFamily: "Proxima Nova light"}}>
+            <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </p>
-            <p style={{fontFamily: "Proxima Nova light"}}>
+            <p>
               It has survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged. It was
               popularised in the 1960s with the release of Letraset sheets
@@ -98,7 +98,6 @@ export default function Home() {
               ].map((person, i) => (
                 <li
                   style={{
-                    fontFamily: "Proxima Nova light",
                     backgroundColor: "#edf2e5",
                     padding: "3px 16px",
                     marginBottom: 3,
@@ -177,20 +176,20 @@ export default function Home() {
             >
               Hvorfor uteaktivitet?
             </h2>
-            <p style={{fontFamily: "Proxima Nova light"}}>
+            <p>
               Å være i bevegelse jevnlig er bra for kroppen, det vet vi. Det vi
               kanskje ikke tenker ofte nok på er at aktivitet også er godt for
               den psykiske helsa. Vi føler oss både sterkere og lettere til
               sinns, etter en gå-, jogge- eller sykkeltur.
             </p>
-            <p style={{fontFamily: "Proxima Nova light"}}>
+            <p>
               Når du er aktiv, produserer kroppen din lykkehormoner som heter
               endorfiner. Det spiller ikke så stor rolle hva slags aktivitet du
               holder på med, så lenge du blir litt varm og gjerne andpusten.
               Gjør en aktivitet du liker, enten det er dansing, svømming eller
               skigåing. Mulighetene er mange.
             </p>
-            <p style={{fontFamily: "Proxima Nova light"}}>
+            <p>
               Helsedirektoratet anbefaler alle barn og unge å være aktive minst
               60 minutter hver dag. De som er aktive sammen med andre, opplever
               at det sosiale bidrar til økt trivsel og godt humør.
@@ -206,7 +205,7 @@ export default function Home() {
               justifyContent: "center",
             }}
             >
-            <q style={{ color: "#5e5e2b", maxWidth: "40%", fontFamily: "Proxima Nova light"}}>
+            <q style={{ color: "#5e5e2b", maxWidth: "40%",}}>
               <strong>
                 Helsedirektoratet anbefaler alle barn og unge å være aktive i
                 minst <emph>60 minutter</emph> hver dag
@@ -228,7 +227,7 @@ export default function Home() {
               Kontaktinformasjon
             </h2>
           
-          <p style={{fontFamily: "Proxima Nova light"}}>Hvis det er noe du lurer på, eller noe du ønsker å gi tilbakemelding på, kontakt oss her.</p>
+          <p>Hvis det er noe du lurer på, eller noe du ønsker å gi tilbakemelding på, kontakt oss her.</p>
           
           <form className="myform">
           
