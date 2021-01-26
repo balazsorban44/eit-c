@@ -4,10 +4,10 @@ import "../styles/globals.sass"
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Header />
       <main>
         <Component {...pageProps} />
       </main>
+      <Header />
       <footer>
         <strong>© Eksperter i Team</strong>&nbsp;—&nbsp;
         {new Date().getFullYear()}

@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function Hero({ offset }) {
   return (
     <div
       style={{
@@ -18,6 +18,7 @@ export default function Hero() {
           width: "100%",
           height: "100%",
           zIndex: -1,
+          transform: `translateY(${offset * 0.5}px)`,
         }}
       >
         <img
@@ -33,11 +34,9 @@ export default function Hero() {
           style={{
             position: "absolute",
             width: "100%",
-            height: "100%",
+            height: "101%",
             top: 0,
             left: 0,
-            background:
-              "linear-gradient(white 10%, transparent 30%, transparent 95%, white)",
           }}
         />
       </div>
@@ -48,7 +47,6 @@ export default function Hero() {
           height: 96,
           WebkitFilter: "drop-shadow(2px 2px 4px #808080)",
           filter: "drop-shadow(2px 2px 4px #808080)",
-
         }}
         src="/logo.png"
         alt="logo som viser en person går mot et tre"
@@ -61,7 +59,7 @@ export default function Hero() {
           fontSize: 72,
           textShadow: "2px 2px 4px #808080",
           fontWeight: "lighter",
-          fontFamily: 'DM Serif Display',
+          fontFamily: "DM Serif Display",
         }}
       >
         Aktiv i Trondheim
