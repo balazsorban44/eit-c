@@ -57,9 +57,11 @@ export default function Hero() {
           marginBottom: 250,
           fontSize: 72,
           fontWeight: "lighter",
+          fontFamily: 'DM Serif Display',
+
         }}
       >
-        Aktiviteter i Trondheim
+        Aktiv i Trondheim
       </h1>
     </div>
   )

@@ -2,13 +2,12 @@ import * as React from "react"
 import Head from "next/head"
 import Link from "next/link"
 import Hero from "../componets/HeroNew"
-import Map from "./map"
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Aktiviteter i Trondheim</title>
+        <title>Aktiv i Trondheim</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -31,17 +30,23 @@ export default function Home() {
               maxWidth: "40%",
             }}
           >
+            
             <h3
-              style={{ marginTop: "10vh", marginBottom: "5vh", fontSize: 32 }}
+              style={{ marginTop: "10vh", 
+              font: 'DM Serif Display',
+              color: "#558405",
+              marginBottom: "5vh", 
+              fontSize: 32 
+            }}
             >
               Aktivpoeng
             </h3>
-            <p>
+            <p style={{fontFamily: "Proxima Nova light"}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </p>
-            <p>
+            <p style={{fontFamily: "Proxima Nova light"}}>
               It has survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged. It was
               popularised in the 1960s with the release of Letraset sheets
@@ -60,7 +65,8 @@ export default function Home() {
                 marginTop: "10vh",
                 marginBottom: "5vh",
                 textAlign: "center",
-                fontSize: 32,
+                fontSize: 34,
+                color: "#558405",
               }}
             >
               Topp 10
@@ -81,7 +87,8 @@ export default function Home() {
               ].map((person, i) => (
                 <li
                   style={{
-                    backgroundColor: "#efefef",
+                    fontFamily: "Proxima Nova light",
+                    backgroundColor: "#edf2e5",
                     padding: 3,
                     marginBottom: 3,
                     marginTop: person.active ? 32 : undefined,
@@ -103,7 +110,19 @@ export default function Home() {
           </div>
         </section>
 
-        <Map />
+        <section
+      id="aktivitetskart"
+      style={{ margin: "5vh 15vw" }}
+    >
+      <iframe
+        id="map-iframe"
+        frameBorder="0"
+        src="https://ntnu-gis.maps.arcgis.com/apps/webappviewer/index.html?id=e202ca614a784d1284eeff840a8344fa"
+        width="90%"
+        height="90%"
+      />
+      </section>
+
         <section
           id="psykiskhelse"
           style={{ flexDirection: "row", minHeight: "80vh" }}
@@ -126,20 +145,20 @@ export default function Home() {
             >
               Hvorfor uteaktivitet?
             </h2>
-            <p>
+            <p style={{fontFamily: "Proxima Nova light"}}>
               Å være i bevegelse jevnlig er bra for kroppen, det vet vi. Det vi
               kanskje ikke tenker ofte nok på er at aktivitet også er godt for
               den psykiske helsa. Vi føler oss både sterkere og lettere til
               sinns, etter en gå-, jogge- eller sykkeltur.
             </p>
-            <p>
+            <p style={{fontFamily: "Proxima Nova light"}}>
               Når du er aktiv, produserer kroppen din lykkehormoner som heter
               endorfiner. Det spiller ikke så stor rolle hva slags aktivitet du
               holder på med, så lenge du blir litt varm og gjerne andpusten.
               Gjør en aktivitet du liker, enten det er dansing, svømming eller
               skigåing. Mulighetene er mange.
             </p>
-            <p>
+            <p style={{fontFamily: "Proxima Nova light"}}>
               Helsedirektoratet anbefaler alle barn og unge å være aktive minst
               60 minutter hver dag. De som er aktive sammen med andre, opplever
               at det sosiale bidrar til økt trivsel og godt humør.
@@ -154,52 +173,67 @@ export default function Home() {
               alignItems: "center",
               justifyContent: "center",
             }}
-          >
-            <q style={{ color: "#558405", maxWidth: "40%" }}>
+            >
+            <q style={{ color: "#558405", maxWidth: "40%", fontFamily: "Proxima Nova light"}}>
               <strong>
                 Helsedirektoratet anbefaler alle barn og unge å være aktive i
-                minst 60 minutter hver dag
+                minst <emph>60 minutter</emph> hver dag
               </strong>
             </q>
           </div>
         </section>
         <br></br>
+
         <section id="kontaktinfo">
-          <h2>Kontaktinfo</h2>
-          <p>Her kan det sendes inn meldinger </p>
-          <form>
-            <div>
-              <label>Fornavn</label>
-              <input type="text" name="firstName"></input>
+        <h2
+              style={{
+                color: "#558405",
+                textAlign: "center",
+                fontSize: 32,
+              }}
+            >
+              Kontaktinformasjon
+            </h2>
+          
+          <p style={{fontFamily: "Proxima Nova light"}}>Hvis det er noe du lurer på, eller noe du ønsker å gi tilbakemelding på, kontakt oss her.</p>
+          
+          <form className="myform">
+          
+            <div className="formgroup">
+              <label> <strong>Fornavn</strong> </label>
+              <input color="#558405" type="text" name="firstName"></input>
             </div>
 
+            <div className="formgroup">
+              <label><strong>Etternavn</strong></label>
+              <input color="#558405" type="text" name="lastName"></input>
+            </div>
+
+            <div className="formgroup">
+              <label><strong>Email</strong></label>
+              <input color="#558405" type="text" name="email"></input>
+            </div>
+
+            <div className="formgroup">
+              <label><strong>Emne</strong></label>
+              <input color="#558405" type="text" name="emne"></input>
+            </div>
+
+            <div className="formgroup">
+              <label><strong>Det gjelder... </strong></label>
+              <select name="topic">
+                  <option value="kart">Kartløsningen</option>
+                  <option value="psykisk">Info om psykisk helse</option>
+                  <option value="poeng">Poengsystemet</option>
+              </select>
+            </div>
             <br></br>
-
-            <div>
-              <label>Etternavn</label>
-              <input type="text" name="lastName"></input>
+            <div className="formgroup">
+              <label><strong>Melding</strong></label>
+              <textarea type="textarea" name="melding"></textarea>
             </div>
 
-            <br></br>
-
-            <div>
-              <label>Email</label>
-              <input type="text" name="email"></input>
-            </div>
-
-            <br></br>
-
-            <div>
-              <label>Emne</label>
-              <input type="text" name="emne"></input>
-            </div>
-
-            <br></br>
-
-            <div>
-              <label>Melding</label>
-              <textarea type="message" name="melding"></textarea>
-            </div>
+            <input className="button" type="submit" value="Send inn" name=""></input>
           </form>
         </section>
       </main>
