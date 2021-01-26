@@ -152,7 +152,12 @@ export default function Home() {
 
         <section
           id="psykiskhelse"
-          style={{ flexDirection: "row", minHeight: "80vh",}}
+          style={{ 
+            flexDirection: "row", 
+            minHeight: "80vh",
+            alignItems: "flex-end",
+
+          }}
         >
           <div
             style={{
@@ -197,17 +202,32 @@ export default function Home() {
             style={{
               flex: 1,
               display: "flex",
+              flexDirection: "column",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "flex-end",
             }}
             >
-            <q style={{ color: "#5e5e2b", maxWidth: "40%",}}>
-              <strong>
+            <q style={{ color: "#5e5e2b", maxWidth: "50%", textAlign: "center"}}>
+              <strong style={{fontSize: 22,}}>
                 Helsedirektoratet anbefaler alle barn og unge å være aktive i
-                minst <emph>60 minutter</emph> hver dag
+                minst 60 minutter hver dag.
               </strong>
-            </q>
+            </q>  
+            
+            <img
+              style={{
+                objectFit: "cover",
+                width: "70%",
+                height: "70%",
+                marginTop: 100
+                
+              }}
+              src="/aktivitetbarn.jpg"
+              alt="Bildet viser barn som leker med en ball"
+            />
           </div>
+          
+        
         </section>
         <br></br>
 
