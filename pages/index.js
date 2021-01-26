@@ -15,7 +15,6 @@ export default function Home() {
         <section
           id="poenginfo"
           style={{
-            marginTop: "200px",
             minHeight: 0,
             flexDirection: "row",
             alignItems: "flex-start",
@@ -120,7 +119,6 @@ export default function Home() {
       id="aktivitetskart"
       style={{ 
         margin: "5vh 15vw" ,
-        marginTop: 250
       }}
     >
       <iframe
@@ -136,7 +134,6 @@ export default function Home() {
       <section
       id="imagePastMap"
       style={{ 
-        marginTop: "250px",
 
         }}>
 
@@ -155,7 +152,7 @@ export default function Home() {
 
         <section
           id="psykiskhelse"
-          style={{ flexDirection: "row", minHeight: "80vh", marginTop: "100px", }}
+          style={{ flexDirection: "row", minHeight: "80vh",}}
         >
           <div
             style={{
@@ -215,7 +212,7 @@ export default function Home() {
         <br></br>
 
         <section id="kontaktinfo"
-        style={{ marginTop: "100px"}}>
+        style={{}}>
         <h2
               style={{
                 color: "#5e5e2b",
