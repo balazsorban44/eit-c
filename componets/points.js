@@ -31,15 +31,20 @@ export default function Points() {
           Aktivpoeng
         </h3>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s.
+          Poengsystemet fungerer slik at en bruker må prøve å samle inn poeng
+          ved å sjekke inn på forskjellige steder i Trondheim.
         </p>
         <p>
-          It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages.
+          Man får mindre poeng hvis man drar til et område der det allerede er
+          en høy folketetthet, som i en park i Midtbyen, og mer poeng hvis man
+          drar til et sted der det er mindre folk, som en tur i skogen.
+        </p>
+        <p>
+          For å kunne få poengene, må man sjekke inn på stedet man drar til. Det
+          er slik poengfordelingen vil funke; hvis det er flere mennesker
+          sjekket inn på et område i et tidsrom på dagen, vil poengene man kan
+          hente fra dette stedet i det tidsrommet synke i antall. Derfor er det
+          bl.a. mer poeng å hente hvis man går til stedet utenom dens rushtid.
         </p>
       </div>
 
@@ -91,7 +96,7 @@ export default function Points() {
                 marginBottom: 3,
                 marginTop: person.active ? 32 : undefined,
                 display: "flex",
-                fontFamily: 'Raleway',
+                fontFamily: "Raleway",
                 justifyContent: "space-between",
               }}
               key={person.name + person.point}

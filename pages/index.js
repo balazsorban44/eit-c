@@ -29,7 +29,6 @@ export default function Home() {
       <Map />
 
       <section
-        id="imagePastMap"
         style={{
           padding: 0,
           maxHeight: "80vh",
@@ -39,10 +38,8 @@ export default function Home() {
       >
         <img
           style={{
-            objectFit: "cover",
-            width: "100%",
-            height: "100%",
-            transform: `translateY(${-750 + offset * 0.2}px)`,
+            width: "100vw",
+            transform: `translateY(${-850 + offset * 0.2}px)`,
           }}
           src="/pastmap.jpg"
           alt="Bildet viser en person som går tur i skogen"
@@ -55,7 +52,7 @@ export default function Home() {
           flexDirection: "row",
           minHeight: "80vh",
           alignItems: "flex-end",
-          boxShadow: "0 0 30px 30px white",
+          boxShadow: "0 0 40px 40px white",
           position: "relative",
           zIndex: 1,
         }}
