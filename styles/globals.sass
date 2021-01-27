@@ -1,164 +1,162 @@
-::root
-  scroll-behavior: smooth
-  --primary-color: #fff
+// ::root
+//   scroll-behavior: smooth
+//   --primary-color: #fff
 
-body
-  overflow-y: scroll
-  padding: 0
-  margin: 0
+// body
+//   overflow-y: scroll
+//   padding: 0
+//   margin: 0
 
-html
-  scroll-behavior: smooth
+// html
+//   scroll-behavior: smooth
 
-h1
-  font-size: 45px
-  color: white
-  text-align: center
+// h1
+//   font-size: 45px
+//   color: white
+//   text-align: center
 
-h1, h2, h3, h4, h5, h6
-  font-family: 'DM Serif Display'
-  font-weight: lighter
-  
+// h1, h2, h3, h4, h5, h6
+//   font-family: 'DM Serif Display'
+//   font-weight: lighter
 
+// nav
+//   margin: 0
 
-nav
-  margin: 0
+// ul
+//   padding: 0
+//   margin: 0
 
-ul
-  padding: 0
-  margin: 0
+// p, q
+//   font-size: 20
+//   font-family: 'Raleway'
 
-p, q
-  font-size: 20
-  font-family: 'Raleway'
+// a
+//   color: inherit
+//   text-decoration: none
 
-a
-  color: inherit
-  text-decoration: none
+// *
+//   box-sizing: border-box
+//   font-size: 18px
 
-*
-  box-sizing: border-box
-  font-size: 18px
+// main
+//   display: flex
+//   flex-direction: column
+//   min-height: calc(100vh - 246px - 64px)
 
-main
-  display: flex
-  flex-direction: column
-  min-height: calc(100vh - 246px - 64px)
+// footer
+//   height: 64px
+//   align-items: center
+//   display: flex
+//   justify-content: center
+//   background-color: var(--primary-color)
 
-footer
-  height: 64px
-  align-items: center
-  display: flex
-  justify-content: center
-  background-color: var(--primary-color)
+// section
+//   flex: 1
+//   display: flex
+//   flex-direction: column
+//   min-height: 100vh
+//   align-items: center
+//   scroll-margin-top: 65px
+//   padding: 0 15vw 250px
+//   background-color: white
 
-section
-  flex: 1
-  display: flex
-  flex-direction: column
-  min-height: 100vh
-  align-items: center
-  scroll-margin-top: 65px
-  padding: 0 15vw 250px
-  background-color: white
+// #map-iframe
+//   //width: 100%
 
-#map-iframe
-  //width: 100%
+// nav
+//   display: flex
+//   flex-direction: column
+//   align-items: center
+//   top: 0
+//   right: 0
+//   width: 100%
+//   position: fixed
+//   z-index: 1
+//   background-color: white
+//   box-shadow: 0 0 10px 5px white
+// nav ul
+//   flex-wrap: wrap
+//   display: flex
+//   justify-content: center
+//   align-self: flex-end
 
-nav
-  display: flex
-  flex-direction: column
-  align-items: center
-  top: 0
-  right: 0
-  width: 100%
-  position: fixed
-  z-index: 1
-  background-color: white
-  box-shadow: 0 0 10px 5px white
-nav ul
-  flex-wrap: wrap
-  display: flex
-  justify-content: center
-  align-self: flex-end
+// nav li
+//   list-style: none
+//   margin: 1rem
+//   text-transform: uppercase
+//   color: #98bbc9
+//   font-family: 'PT Sans Narrow'
 
-nav li
-  list-style: none
-  margin: 1rem
-  text-transform: uppercase
-  color: #98bbc9
-  font-family: 'PT Sans Narrow'
+// nav li:hover
+//   color: #5e5e2b
 
-nav li:hover
-  color: #5e5e2b
+// #hero
+//   margin-top: -246px
+//   display: flex
+//   min-height: 100vh
+//   position: relative
+//   flex: 1
+//   align-items: flex-end
+//   justify-content: space-around
+//   gap: 2em
+//   padding: 0 2em
 
-#hero
-  margin-top: -246px
-  display: flex
-  min-height: 100vh
-  position: relative
-  flex: 1
-  align-items: flex-end
-  justify-content: space-around
-  gap: 2em
-  padding: 0 2em
+//   &-img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     z-index: -1
+//     opacity: 0.8
 
-  &-img
-    position: absolute
-    width: 100%
-    height: 100%
-    z-index: -1
-    opacity: 0.8
+//   &-img img
+//     object-fit: cover
+//     width: 100%
+//     height: 100%
 
-  &-img img
-    object-fit: cover
-    width: 100%
-    height: 100%
+// #point
+//   display: flex
+//   flex-direction: column
+//   align-items: center
 
-#point
-  display: flex
-  flex-direction: column
-  align-items: center
+// .hero-box
+//   background-color: #ffffffaa
+//   height: 320px
+//   flex: 1
+//   display: flex
+//   align-items: center
+//   justify-content: center
+//   margin-bottom: 2em
 
-.hero-box
-  background-color: #ffffffaa
-  height: 320px
-  flex: 1
-  display: flex
-  align-items: center
-  justify-content: center
-  margin-bottom: 2em
+// #foot
+//   background-color: transparent
 
-#foot
-  background-color: transparent
+// #point-value
+//   font-size: 3em
 
-#point-value
-  font-size: 3em
+// .link
+//   border-bottom: solid black
 
-.link
-  border-bottom: solid black
+// .myform
+//   padding: 20px
 
-.myform
-  padding: 20px
+// .formgroup
+//   padding-bottom: 15px
 
-.formgroup
-  padding-bottom: 15px
+// .myform label
+//   display: block
+//   font-family: "PT Sans Narrow"
 
-.myform label
-  display: block
-  font-family: "PT Sans Narrow"
+// .myform input[type="text"], .myform textarea
+//   padding: 10px
+//   width: 500px
+//   font-family: "PT Sans Narrow"
 
-.myform input[type="text"], .myform textarea
-  padding: 10px
-  width: 500px
-  font-family: "PT Sans Narrow"
+// .myform input[type="submit"]
+//   background-color: #333333
+//   color: #ffffff
+//   padding: 10px 15px
+//   border: none
+//   font-family: "PT Sans Narrow"
 
-.myform input[type="submit"]
-  background-color: #333333
-  color: #ffffff
-  padding: 10px 15px
-  border: none
-  font-family: "PT Sans Narrow"
-
-.myform input[type="submit"]:hover
-  background: #5e5e2b
+// .myform input[type="submit"]:hover
+//   background: #5e5e2b

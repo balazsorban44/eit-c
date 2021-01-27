@@ -1,17 +1,16 @@
 import Header from "../componets/Header"
 import "../styles/globals.sass"
+import "../styles/layout.sass"
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <main>
-        <Component {...pageProps} />
-      </main>
+      <Component {...pageProps} />
       <Header />
-      <footer>
+      {/* <footer>
         <strong>© Eksperter i Team</strong>&nbsp;—&nbsp;
         {new Date().getFullYear()}
-      </footer>
+      </footer> */}
     </>
   )
 }

@@ -1,35 +1,8 @@
 export default function Points() {
   return (
-    <section
-      id="poenginfo"
-      style={{
-        minHeight: 0,
-        flexDirection: "row",
-        alignItems: "flex-start",
-        justifyContent: "space-between",
-        background: "white",
-        boxShadow: "0 0 30px 30px white",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-          maxWidth: "40%",
-        }}
-      >
-        <h3
-          style={{
-            marginTop: "10vh",
-            color: "#5e5e2b",
-            marginBottom: "5vh",
-            fontSize: 34,
-          }}
-        >
-          Aktivpoeng
-        </h3>
+    <section id="poenginfo" style={{ marginTop: 0 }}>
+      <div className="point-first" style={{ marginTop: 120 }}>
+        <h3>Aktivpoeng</h3>
         <p>
           Poengsystemet fungerer slik at en bruker må prøve å samle inn poeng
           ved å sjekke inn på forskjellige steder i Trondheim.
@@ -47,34 +20,14 @@ export default function Points() {
           bl.a. mer poeng å hente hvis man går til stedet utenom dens rushtid.
         </p>
       </div>
-
       <img
-        style={{
-          objectFit: "cover",
-          width: "18%",
-          height: "10%",
-          marginTop: "20vh",
-        }}
+        style={{ width: "18%", marginTop: 120 }}
         src="/togapatur.png"
         alt="Bildet viser to personer som går tur"
       />
 
-      <div
-        style={{
-          minWidth: 320,
-        }}
-      >
-        <h3
-          style={{
-            marginTop: "10vh",
-            marginBottom: "5vh",
-            textAlign: "center",
-            fontSize: 34,
-            color: "#5e5e2b",
-          }}
-        >
-          Topp 10
-        </h3>
+      <div style={{ minWidth: "min(320px, 90%)", marginTop: 120 }}>
+        <h3>Topp 10</h3>
         <ul>
           {[
             { name: "Jakob", point: 175 },

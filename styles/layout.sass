@@ -1,0 +1,154 @@
+body
+  margin: 0
+  padding: 0
+
+html
+  scroll-behavior: smooth
+ul
+  padding: 0
+a
+  text-decoration: none
+  color: inherit
+
+p
+  line-height: 1.1
+  font-size: 22px
+
+.wrapper
+  display: grid
+  grid-template-columns: unquote("1fr min(1280px, 100vw) 1fr")
+
+  & > *
+    grid-column: 2
+
+.full-bleed
+  width: 100%
+  grid-column: 1 / 4
+
+nav
+  display: flex
+  flex-direction: column
+  align-items: center
+  top: 0
+  right: 0
+  width: 100%
+  position: fixed
+  z-index: 1
+  background-color: white
+  box-shadow: 0 0 10px 5px white
+  ul
+    flex-wrap: wrap
+    display: flex
+    justify-content: center
+    align-self: flex-end
+
+  li
+    list-style: none
+    text-transform: uppercase
+    color: #98bbc9
+    font-family: 'PT Sans Narrow'
+    margin: .1rem
+    padding: .1em
+    @media (min-width: 640px)
+      margin: 1rem
+
+    a:hover
+      color: #5e5e2b
+
+section
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 7.5vh 0
+  scroll-margin-top: 300px
+
+#intro
+  max-height: 90vh
+  position: relative
+  h1
+    color: white
+    margin-top: 0
+    font-size: 5vw
+    text-shadow: 2px 2px 4px #808080
+    font-weight: "lighter"
+    font-family: "DM Serif Display"
+.intro-text
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 1
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+
+#poenginfo
+  img
+    margin: 2em
+  h3
+    text-align: center
+    font-size: 34px
+    margin: 0
+    color: #5e5e2b
+  .point-first
+    max-width: 640px
+    padding: 0 1em
+  @media(min-width: 960px)
+    flex-direction: row
+    padding: 0 1em
+    justify-content: space-between
+    align-items: flex-start
+    .point-first
+      max-width: 40%
+
+#aktivitetskart
+  scroll-margin-top: 165px
+  iframe
+    height: 80vh
+    width: 95%
+    margin-bottom: 32px
+    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.5), 4px 6px 20px 0 rgba(0, 0, 0, 0.5)
+
+#psykiskhelse
+  p
+    padding: 0 2em
+  @media (min-width: 960px)
+    padding: 0
+    flex-direction: row
+    align-items: flex-end
+
+#foot
+  background-color: transparent
+
+#point-value
+  font-size: 3em
+
+.link
+  border-bottom: solid black
+
+.myform
+  padding: 20px
+
+.formgroup
+  padding-bottom: 15px
+
+.myform label
+  display: block
+  font-family: "PT Sans Narrow"
+
+.myform input[type="text"], .myform textarea
+  padding: 10px
+  width: 500px
+  font-family: "PT Sans Narrow"
+
+.myform input[type="submit"]
+  background-color: #333333
+  color: #ffffff
+  padding: 10px 15px
+  border: none
+  font-family: "PT Sans Narrow"
+
+.myform input[type="submit"]:hover
+  background: #5e5e2b
