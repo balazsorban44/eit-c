@@ -91,6 +91,7 @@ export default function Points() {
                 marginBottom: 3,
                 marginTop: person.active ? 32 : undefined,
                 display: "flex",
+                fontFamily: 'Raleway',
                 justifyContent: "space-between",
               }}
               key={person.name + person.point}

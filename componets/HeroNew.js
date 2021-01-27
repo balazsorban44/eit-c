@@ -55,7 +55,7 @@ export default function Hero({ offset }) {
       <h1
         style={{
           marginTop: 50,
-          marginBottom: 500,
+          marginBottom: 400,
           fontSize: 72,
           textShadow: "2px 2px 4px #808080",
           fontWeight: "lighter",

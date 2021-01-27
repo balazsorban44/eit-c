@@ -8,6 +8,12 @@ export default function Map() {
         zIndex: 1,
       }}
     >
+      <h3 
+      style={{fontSize: "34px",
+      color: "#5e5e2b"}}>
+    
+      Aktivitetskart
+      </h3>
       <iframe
         id="map-iframe"
         frameBorder="0"
