@@ -1,6 +1,11 @@
 import firebase from "firebase/app"
 import "firebase/database"
 
+const url =
+  process.env.NODE_ENV === "production"
+    ? "https://helse.vercel.app"
+    : "http://localhost:3000"
+
 export default async function contact(req, res) {
   try {
     // Initialize Firebase
@@ -20,9 +25,9 @@ export default async function contact(req, res) {
       .database()
       .ref("contacts")
       .push({ ...req.body })
-    res.redirect("/")
+    res.redirect(url)
   } catch (error) {
     console.error(error)
-    res.redirect(`/?error=${error.name}`)
+    res.redirect(`${url}/?error=${error.name}`)
   }
 }
