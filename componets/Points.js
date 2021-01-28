@@ -19,6 +19,7 @@ export default function Points() {
           hente fra dette stedet i det tidsrommet synke i antall. Derfor er det
           bl.a. mer poeng å hente hvis man går til stedet utenom dens rushtid.
         </p>
+   
       </div>
       <img
         style={{ width: "18%", marginTop: 120 }}
