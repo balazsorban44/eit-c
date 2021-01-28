@@ -1,7 +1,7 @@
 export default function PastMap({ offset }) {
   return (
     <section
-      className="full-bleed"
+      className="full-bleed pastmap"
       style={{
         maxHeight: "80vh",
         position: "relative",
@@ -12,7 +12,7 @@ export default function PastMap({ offset }) {
         style={{
           position: "relative",
           zIndex: -1,
-          transform: `translateY(${160 - offset * 0.1}px)`,
+       s   transform: `translateY(${350 - offset * 0.1}px)`,
         }}
         src="/pastmap.jpg"
         alt="Bildet viser en person som går tur i skogen"
