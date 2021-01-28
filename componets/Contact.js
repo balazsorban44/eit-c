@@ -16,7 +16,7 @@ export default function Contact() {
         kontakt oss her.
       </p>
 
-      <form className="myform">
+      <form className="myform" action="/api/contact" method="post">
         <div className="formgroup">
           <label style={{ fontFamily: "PT Sans Narrow" }}>
             <strong>Fornavn</strong>{" "}
@@ -88,10 +88,6 @@ export default function Contact() {
           type="submit"
           value="Send inn"
           name=""
-          onClick={(e) => {
-            e.preventDefault()
-            window.location = "#kontaktinfo"
-          }}
         ></input>
       </form>
     </section>
