@@ -1,28 +1,22 @@
-import * as firebase from "firebase"
+import firebase from "firebase/app"
 import "firebase/database"
 
-try {
-  // Initialize Firebase
-  if (!firebase.apps.length) {
-    firebase.initializeApp({
-      apiKey: "AIzaSyAFlK3m-3uxR2ogU2ZPNwvbzGDoWvwh51M",
-      authDomain: "helse-eit.firebaseapp.com",
-      projectId: "helse-eit",
-      storageBucket: "helse-eit.appspot.com",
-      databaseURL:
-        "https://helse-eit-default-rtdb.europe-west1.firebasedatabase.app",
-      messagingSenderId: "1019832193745",
-      appId: "1:1019832193745:web:41d999921fbb9a6e226bf0",
-    })
-  }
-} catch (error) {
-  console.error(error)
-  throw error
-}
-
-export default function contact(req, res) {
+export default async function contact(req, res) {
   try {
-    firebase
+    // Initialize Firebase
+    if (!firebase.apps.length) {
+      firebase.initializeApp({
+        apiKey: "AIzaSyAFlK3m-3uxR2ogU2ZPNwvbzGDoWvwh51M",
+        authDomain: "helse-eit.firebaseapp.com",
+        projectId: "helse-eit",
+        storageBucket: "helse-eit.appspot.com",
+        databaseURL:
+          "https://helse-eit-default-rtdb.europe-west1.firebasedatabase.app",
+        messagingSenderId: "1019832193745",
+        appId: "1:1019832193745:web:41d999921fbb9a6e226bf0",
+      })
+    }
+    await firebase
       .database()
       .ref("contacts")
       .push({ ...req.body })
