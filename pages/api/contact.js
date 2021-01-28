@@ -25,7 +25,8 @@ export default async function contact(req, res) {
       .database()
       .ref("contacts")
       .push({ ...req.body })
-    res.redirect(url)
+
+    res.end()
   } catch (error) {
     console.error(error)
     res.redirect(`${url}/?error=${error.name}`)
