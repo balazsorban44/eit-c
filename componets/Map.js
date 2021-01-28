@@ -2,7 +2,7 @@ export default function Map() {
   return (
     <section id="aktivitetskart" style={{ marginTop: 0 }}>
       <h3 style={{ fontSize: "34px", color: "#5e5e2b", marginTop: 100 }}>
-        Aktivitetskart
+        Utekart
       </h3>
       <iframe
         id="map-iframe"

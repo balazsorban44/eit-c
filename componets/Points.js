@@ -2,7 +2,7 @@ export default function Points() {
   return (
     <section id="poenginfo" style={{ marginTop: 0 }}>
       <div className="point-first" style={{ marginTop: 120 }}>
-        <h3>Aktivpoeng</h3>
+        <h3>Utepoeng</h3>
         <p>
           Poengsystemet fungerer slik at en bruker må prøve å samle inn poeng
           ved å sjekke inn på forskjellige steder i Trondheim.
