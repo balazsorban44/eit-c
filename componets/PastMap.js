@@ -12,7 +12,7 @@ export default function PastMap({ offset }) {
         style={{
           position: "relative",
           zIndex: -1,
-       s   transform: `translateY(${350 - offset * 0.1}px)`,
+          transform: `translateY(${350 - offset * 0.1}px)`,
         }}
         src="/pastmap.jpg"
         alt="Bildet viser en person som går tur i skogen"
