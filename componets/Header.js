@@ -3,7 +3,7 @@ import Link from "next/link"
 const nav = [
   { title: "Hjem", href: "#top" },
   { title: "Utepoeng", href: "#poenginfo" },
-  { title: "Utekart", href: "#aktivitetskart" },
+  { title: "Aktivitetskart", href: "#aktivitetskart" },
   { title: "Helse", href: "#psykiskhelse" },
   { title: "Kontakt", href: "#kontaktinfo" },
   { title: "Logg inn", href: "#top" },
