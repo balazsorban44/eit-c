@@ -16,7 +16,28 @@ export default function Contact() {
         kontakt oss her.
       </p>
 
-      <form className="myform" action="/api/contact" method="post">
+      <form
+        className="myform"
+        action="/api/contact"
+        method="post"
+        onSubmit={async (e) => {
+          e.preventDefault()
+          try {
+            await fetch("/api/contact", {
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(
+                Object.fromEntries(new FormData(e.target).entries())
+              ),
+              method: "post",
+            })
+            window.location.reload()
+          } catch (error) {
+            window.location = `${window.location}?error`
+          }
+        }}
+      >
         <div className="formgroup">
           <label style={{ fontFamily: "PT Sans Narrow" }}>
             <strong>Fornavn</strong>{" "}
